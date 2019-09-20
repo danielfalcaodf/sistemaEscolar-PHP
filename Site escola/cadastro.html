@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <script src="plugins/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+ 
+    <link rel="stylesheet" href="plugins/bootstrap-4.2.1-dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="plugins/materialize/css/materialize.min.css"
+    media="screen,projection" />
+
+
+    <link rel="stylesheet" href="css/cadastro.css">
+
+
+  </head>
+
+
+
+  <body>
+<!-- 
+    <form class="box" action="" >
+      
+    <h1>Cadastro</h1>
+      <input type="text"  required pattern="^(\w\w+)\s(\w){2,40}$" id="NomeCompleto" name="NomeCompleto" placeholder="Nome Completo">
+      <div class="off" id="msg-nome"></div>
+      <input type="text" required pattern="^(\w\w+)\s(\w){2,40}$"  id="Escola" name="" placeholder="Escola">
+      <div class="off" id="msg-escola"></div>
+    
+      <label>Turma:</label>
+      
+      <select required id='turma' class="browser-default">
+        <option value="" disabled selected>Seleciona</option>
+        <option value="1ºA">1°A</option>
+        <option value="1ºB">1°B</option>
+        <option value="1ºB">1°C</option>
+        
+      </select>
+      <input id='email'  pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required type="email" name="" placeholder="Email">
+      <div class="off" id="msg-email"></div>
+      <input id="senha" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n]).*$" required type="password" name="" placeholder="Senha">
+      <div class="msg-errado off" id="msg-senha">A senha tem que ter 8 digito!!</div>
+      <input id="ConfirmarSenha" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n]).*$" required type="password" name="" placeholder="Confirmar Senha">
+      <div class="off msg-errado" id="msg-confirm">A senha tem que ser igual informada</div>
+      <div class="white-text">
+      <a type="submit" class="waves-effect waves-light btn"  value="Cadastro" onclick=criarconta()>Cadastro</a>
+    </div>
+    <div class="progress off  black">
+      <div class="indeterminate  light-blue lighten-1"></div>
+  </div>
+      <div class="white-text" id="msg-alert">
+
+      </div>
+    </form> -->
+
+
+  
+    <form class="box" >
+        <h1>Cadastro</h1>
+        <input type="text"  required pattern="[A-Za-zÀ-ú ']{5,50}" id="NomeCompleto" name="NomeCompleto" placeholder="Nome Completo">
+        <div class="off" id="msg-nome"></div>
+        <input type="text" required pattern="[A-Za-zÀ-ú ']{5,50}"  id="Escola" name="" placeholder="Escola">
+        <div class="off" id="msg-escola"></div>
+      
+        <label>Turma:</label>
+        
+        <select required id='turma' class="browser-default">
+          <option value="" disabled selected>Seleciona</option>
+          <option value="1ºA">1°A</option>
+          <option value="1ºB">1°B</option>
+          <option value="1ºB">1°C</option>
+          
+        </select>
+        <input id='email'  pattern="^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required type="email" name="" placeholder="Email">
+        <div class="off" id="msg-email"></div>
+        <input id="senha" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n]).*$" required type="password" name="" placeholder="Senha">
+        <div class="msg-errado off" id="msg-senha">A senha tem que ter 8 digito!!</div>
+        <input id="ConfirmarSenha" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n]).*$" required type="password" name="" placeholder="Confirmar Senha">
+        <div class="off msg-errado" id="msg-confirm">A senha tem que ser igual informada</div>
+        <div class="white-text">
+        <!-- <a type="submit" class="waves-effect waves-light btn"  value="Cadastro" onclick=criarconta()>Cadastro</a> -->
+        <button type="submit" class="waves-effect waves-light btn"value="Cadastro" onclick=getDados()>Cadastro</button>
+      </div>
+      <div class="progress off  black">
+        <div class="indeterminate  light-blue lighten-1"></div>
+    </div>
+        <div class="white-text" id="msg-alert">
+  
+        </div>
+
+      
+    </form>
+  </body>
+<script  type="text/javascript" src="js/aluno-LoginCadastro.js"></script>
+<script src="js/CadastroValidador.js"></script>
+</html>

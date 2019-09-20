@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+    <!-- Custom styles for this template -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="plugins/materialize/css/materialize.min.css"
+        media="screen,projection" />
+
+    <link rel="stylesheet" href="css/addquestao.css" />
+</head>
+
+<body>
+
+    <div class="container ">
+
+        <form>
+            <div class="">
+                <h2 class="">ADD questoes</h2>
+                <div class="input-field">
+
+                    <input class="validate" required type="number" name="num" id="questao-num" placeholder="Numero da questão" />
+                    <label for="questao-num">Numero da Questão: </label>
+                </div>
+                <div class="input-field">
+                    <textarea type="text"  required class="validate materialize-textarea" id="questao-text"
+                        aria-describedby="questao-text" placeholder="Texto da Questão"></textarea>
+                    <label for="questao-text">Questão:</label>
+
+                </div>
+
+
+
+                <div class="input-field ">
+
+                    <select name=""  required id="materia-escolhe" class="">
+                        <option value=""  disabled selected="selected">Seleciona um....</option>
+                        <option value="Matemática">Matemática</option>
+                        <option value="Português">Português</option>
+                    </select>
+                    <label for="materia-escolhe">Escolhe a materia</label>
+                </div>
+                <div class="input-field ">
+                <label for="tema-text">Tema</label>
+                <input type="text" name="tema" required class="validate" id="tema-text" placeholder="Qual tema da questão">
+                </div>
+                <div class="input-field">
+            
+                        
+                 <input type="text" required name="alternativas" id="A" class="validate"
+                        placeholder="Digita a alternativa">
+                        <label for="A">A)</label>
+                </div>
+                <div class="input-field">
+           
+                        
+                 <input type="text" required name="alternativas" id="B" class="validate"
+                        placeholder="Digita a alternativa">
+                        <label for="B">B)</label>
+                </div>
+                <div class="input-field">
+            
+                        
+                 <input required type="text" name="alternativas" id="C" class="validate"
+                        placeholder="Digita a alternativa">
+                        <label for="C">C)</label>
+                </div>
+                <div class="input-field">
+     
+                        
+                 <input required type="text" name="alternativas" id="D" class="validate"
+                        placeholder="Digita a alternativa">
+                        <label for="D">D)</label>
+                </div>
+                <div class="input-field">
+      
+                        
+                    <input type="text" required name="alternativas" id="E" class="validate"
+                        placeholder="Digita a alternativa">
+                        <label for="E" >E)</label>
+                </div>
+            </div>
+       
+            <div class="row">
+                
+                    <div class="input-field col s2">
+
+                            <select name=""  required id="respostaGab" class="validate">
+                                <option value=""  disabled selected="selected"></option>
+                                <option value="A)">A)</option>
+                                <option value="B)">B)</option>
+                                <option value="C)">C)</option>
+                                <option value="D)">D)</option>
+                                <option value="E)">E)</option>
+                            </select>
+                            <label for="respostaGab">Resposta?</label>
+                        </div>
+            </div>
+
+                <div class="btn-full">
+                        <button type="submit" onclick="getquest()" class="btn  red waves-effect waves-light">adicionar questão<i class="material-icons right">add</i></button>
+                </div>
+                      
+                
+                
+ 
+            <div class="progress off  black">
+                <div class="indeterminate  light-blue lighten-1"></div>
+            </div>
+            <div id="msg-alert">
+
+            </div>
+        </form>
+
+    </div>
+    <div class="" id="list-questADD">
+
+
+
+    </div>
+
+</body>
+<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="plugins/materialize/js/materialize.min.js"></script>
+<!-- <script src="js/jquery-ui-1.12.js"></script> -->
+<!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+<!-- <script src="plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script> -->
+<script src="js/AddQuestao.js"></script>
+
+</html>

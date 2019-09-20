@@ -1,0 +1,238 @@
+body {
+
+	
+	margin: 0;
+	padding: 0;
+
+}
+
+
+#cabecalho-logo{
+  	width: 100%;
+  	height: 50px;
+  	position: relative;
+
+}
+
+.swiper-container
+{
+      width: 100%;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      background: transparent;
+}
+.swiper-slide
+{
+      background-position: center;
+      background-size: cover;
+      width: 720px;
+      height: 420px;
+      background: transparent;
+}
+
+.swiper-slide .imgBx
+{
+
+	width: 100%;
+	height: 420px;
+	overflow: hidden;
+
+
+}
+
+.swiper-slide .imgBx img
+{
+
+	width: 100%;
+	height: 420px;
+	overflow: hidden;
+
+
+}
+
+#servicos
+{
+
+  width: 100%;
+  height: 400px;
+  background: transparent;
+
+}
+
+#tratamento
+{
+
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  background: rgb(64,224,208); /* Fallback for older browsers without RGBA-support */
+  background: rgba(64,224,208, 0.3);
+  right: 510px;
+}
+
+#tratamento2
+{
+
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  background: rgb(64,224,208); /* Fallback for older browsers without RGBA-support */
+  background: rgba(64,224,208, 0.3);
+  right: 180px;
+
+}
+
+#tratamento3
+{
+
+  position: absolute;
+  width: 320px;
+  height: 180px;
+  background: rgb(64,224,208); /* Fallback for older browsers without RGBA-support */
+  background: rgba(64,224,208, 0.3);
+  left: 190px;
+
+
+
+}
+
+#status
+{
+
+  width: 100%;
+  height: 110px;
+  background: rgb(72,209,204);
+  background: rgb(72,209,204, 0.4);
+
+}
+
+#status1 {
+
+    width:100%;
+    height:140px;
+    top:50%;
+    left:50%;
+    margin-top:90px;
+    margin-left:-370px;
+    text-align: center;
+}
+
+#status2 {
+
+    width:100%;
+    height:140px;
+    top:50%;
+    left:50%;
+    margin-top:-140px;
+    margin-left:30px;
+    text-align: center;
+}
+
+#status3 {
+
+    width:100%;
+    height:140px;
+    top:50%;
+    left:50%;
+    margin-top:-140px;
+    margin-left:390px;
+    text-align: center;
+}
+
+@media (max-width: 976px)
+{
+
+
+  #tratamento
+    {
+
+
+      width: 320px;
+      height: 180px;
+      background: rgb(64,224,208); /* Fallback for older browsers without RGBA-support */
+      background: rgba(64,224,208, 0.3);
+      left: 100px;
+      top: 1858px;
+
+    }
+
+  #tratamento2
+    {
+
+
+      background: rgb(64,224,208); /* Fallback for older browsers without RGBA-support */
+      background: rgba(64,224,208, 0.3);
+      width:320px;
+      height:180px;
+      top:1670px;
+      left:100px;
+
+    }
+
+  #tratamento3
+    {
+
+
+      width: 320px;
+      height: 180px;
+      background: rgb(64,224,208); /* Fallback for older browsers without RGBA-support */
+      background: rgba(64,224,208, 0.3);
+      left: 100px;
+
+
+
+    }
+
+    #status
+    {
+
+      width: 100%;
+      height: 600px;
+      background: rgb(72,209,204);
+      background: rgb(72,209,204, 0.4);
+
+    }
+
+    #status1 {
+
+        width:100%;
+        height:140px;
+        top:50%;
+        left:50%;
+        margin-top:90px;
+        margin-left:0px;
+        text-align: center;
+    }
+
+    #status2 {
+
+        width:100%;
+        height:140px;
+        top:50%;
+        left:50%;
+        margin-top:90px;
+        margin-left:0px;
+        text-align: center;
+    }
+
+    #status3 {
+
+        width:100%;
+        height:140px;
+        top:50%;
+        left:50%;
+        margin-top:90px;
+        margin-left:0px;
+        text-align: center;
+    }
+
+    #servicos
+    {
+
+      width: 100%;
+      height: 600px;
+      background: transparent;
+
+    }
+
+}

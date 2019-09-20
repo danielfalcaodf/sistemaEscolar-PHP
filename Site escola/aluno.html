@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <script src="plugins/bootstrap-4.2.1-dist/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="plugins/bootstrap-4.2.1-dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="plugins/materialize/css/materialize.min.css" media="screen,projection" />
+
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+
+
+
+    <link rel="stylesheet" href="css/aluno.css">
+
+</head>
+
+<body>
+
+    <div class="area-aluno p-0">
+        <nav>
+            <div class="nav-wrapper browser-default hoverable light-blue accent-2">
+                <a href="#" class="brand-logo right">Logo</a>
+
+                <ul id="nav-mobile" class="left  hide-on-med-and-down">
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="">Desempenho</a>
+                    </li>
+                    <li>
+                        <a href="">Notas</a>
+                    </li>
+
+                </ul>
+
+                <ul id="nav-mobile" class="area-user  hide-on-med-and-down">
+                    <li id="nome-php"></li>
+                    <li>
+                        <a href="#" class="" onclick="sair()">Sair</a>
+                    </li>
+
+                </ul>
+
+        </nav>
+        <div class="row ">
+            <div class="col-3 p-0" id="col-3">
+                <div class="card-panel hoverable light-blue darken-4 z-depth-3 " id="materias-aluno">
+                    <h6 class="white-text">
+                        <b>Olá Aluno(a), aqui aparece as provas/atividades das displinas, escolhe uma e arrasta e solta o balão
+                            azul ao local indicado</b>
+                    </h6>
+                    <div class="materias" id="Português">
+                        <div class="progress   black" id="proPT">
+                            <div class="indeterminate  light-blue darken-1"></div>
+                        </div>
+                    </div>
+                    <div class="materias" id="Matemática">
+                        <div class="progress black" id="proMT">
+                            <div class="indeterminate  light-blue darken-1"></div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="col-9 p-0" id="area-9">
+                <div class="front" id="front">
+                    <div class="card-panel  hoverable   " id="area">
+                        <div class="text-drop text-center"> Arrastar e soltar a prova/atividade aqui! </div>
+                    </div>
+                </div>
+                <div class=" card-panel  light-blue accent-3 hoverable back">
+
+                    <div class="font  " id="text-questoes">
+
+
+                        <div class="container back" id="questoes">
+
+                            <div class="card-panel light-blue accent-1" id="card-quest">
+                                <h6 class="black-text">
+                                    <p>
+                                        <b>Aqui você pode fazer sua prova/atividade tranquilo, logo que terminar a prova/atividade,
+                                            clica no botão "Enviar resposta para professor(a)" que vai enviar ao professor
+                                            as respostas, se você esqueceu de fazer umas das questões, você sera avisado!!!
+                                            </b>
+                                    </p>
+
+                                    <p>
+                                        <b>Pode ficar tranquilo, que você pode ver as respostas certas e erradas, logo depois
+                                            de clicar no botão "Enviar resposta para professor(a)" que vai aparecer o botão
+                                            "ver as corretas?", depois só voltar para "Home".</b>
+                                    </p>
+                                    <p>
+                                        <b>As respostas não pode ser alterada depois do Envio!! leia com atenção!!!</b>
+                                    </p>
+                                    <p>
+                                        <b>Se tiver algum problema ou duvida chama o professor(a) para ter orientar ou tomar
+                                            as medidas corretas!</b>
+                                    </p>
+                                    <p>
+                                        <b>Boa prova/atividade!!! Boa Sorte!!!!</b>
+                                    </p>
+                                </h6>
+                                <div id="questao-php">
+                                    <div class="progress black">
+                                        <div class="indeterminate  light-blue darken-1"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+
+                </div>
+            </div>
+
+
+
+        </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="plugins/materialize/js/materialize.min.js"></script>
+    <script src="js/jquery-ui-1.12.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+    <script src="plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/aluno-ajax-php.js"></script>
+    <script type="text/javascript" src="js/aluno-resposta.js"></script>
+    <script type="text/javascript" src="js/aluno-drop.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+.off
+{
+    display: none;
+}
+.btn-full, button
+{
+    width: 100%;
+    padding: 10px;
+
+}
+label
+{
+    font-size: 20px !important;
+}

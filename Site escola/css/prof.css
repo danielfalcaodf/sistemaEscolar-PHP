@@ -1,0 +1,302 @@
+html{
+
+	height: 100%;
+	overflow: hidden;
+
+}
+
+body {
+
+	text-align:left;
+
+	margin:0;
+
+	padding:0;
+    height: 100%;
+	padding-bottom: 65px;
+
+}
+
+
+.collapsible-body
+{
+	background-color: white;
+}
+.dados{
+    height:100%;
+
+	width:100%;
+
+	margin:auto;
+
+
+}
+
+.card-panel 
+{
+    box-sizing: border-box!important; 
+    height:100% !important;
+
+	width:100% !important;
+
+	margin:auto !important;
+}
+.sala
+{
+	position: fixed;
+    z-index: 9999;
+	right: -21%;
+	width: 22.303%!important;
+	transition: right 0.3s ease-in;
+}
+.sala:hover
+{
+    right: 0%;
+    transition: all 0.4s ease-in;
+
+    right: 0%;
+	transition: right 0.3s ease-in;
+	width: 22.303%!important;
+
+	
+
+}
+.materia
+{
+	position: fixed;
+    z-index: 9999;
+	left: -21%;
+	width: 22.303%!important;
+	transition: left 0.3s ease-in;
+}
+.materia:hover 
+{
+    left: 0%;
+    transition: all 0.4s ease-in;
+
+    left: 0%;
+	transition: left 0.3s ease-in;
+	width: 22.303%!important;
+	
+}
+
+
+.col-6
+{
+	display: inline-block;
+	border: 5px #00ff2a solid;
+	z-index: -100;
+}
+.row
+{
+	height:100% !important;
+	margin-bottom: 0px !important;
+}
+.painel
+{
+	display: inline-block;
+	border: 1px #00ff2a solid;
+
+}
+
+#painel-aluno{
+
+
+	
+	height: 100% !important;
+	width: 200px !important;
+	position: absolute !important;
+	right:  17px !important;
+	top: 0px !important;
+	padding: 0px !important;
+	padding-top:24px !important;
+	overflow: auto;
+
+}
+#font-aluno
+{
+	
+	height: 100% !important;
+	width: 200px !important;
+	position: absolute !important;
+	right:  22px !important;
+	top: 0px !important;
+
+}
+
+.card-off
+{
+	display: none !important;
+}
+#drop-area-1
+{	
+
+
+}
+#painel-tema {
+	
+	height: 100% !important;
+	width: 200px !important;
+	position: absolute !important;
+	left:  0px !important;
+	top: 0px !important;
+	padding: 0px !important;
+	padding-top:24px !important;
+	 
+
+}
+#font-tema
+{
+	height: 100% !important;
+	width: 200px !important;
+	position: absolute !important;
+	left: 22px !important;
+	top: 0px !important;
+	
+	
+}
+#font-questao
+{
+	height: 100% !important;
+    width: 879px !important;
+    position: absolute !important;
+    right: 230px !important;
+	top: 0px !important;
+
+}
+.card-up-left
+{
+	position: fixed;
+    z-index: 900;
+    width: 25% !important;
+}
+#painel-questao
+{
+	height: 100% !important;
+    width: 906px  !important;
+    position: absolute !important;
+    right: 0px !important;
+	top: 0px !important;
+	overflow: auto;
+}
+#materia-tema
+{
+	padding: 22px !important;
+}
+#questao
+{
+	 width: 100%;
+    height: 100%;
+}
+#questao-sobre
+{
+	padding: 10px 11px !important;
+}
+
+.flipper {  
+	transform: rotateY(180deg);	
+	transition: 0.6s;  	
+	transform-style: preserve-3d;    	
+	position: relative;  
+  }
+	  
+  /* esconde o verso durante a animação */
+  .front, .back {  	
+	backface-visibility: hidden;    	
+	position: absolute;  	
+	top: 0;  	
+   left: 0;  
+  }
+	  
+  /* frente posicionada sobre o verso */
+  .front { z-index: -200;  }    
+  
+  /* verso inicialmente escondido */
+  .back {  transform: rotateY(180deg);
+	;  	
+}
+.dropzone {
+	background-color: #ccc;
+	border: dashed 4px transparent;
+	border-radius: 4px;
+	margin: 10px auto 30px;
+	padding: 10px;
+	width: 80%;
+	transition: background-color 0.3s;
+  }
+  
+  .drop-active {
+	border-color: #aaa;
+  }
+  
+  .drop-target {
+	background-color: #29e;
+	border-color: #fff;
+	border-style: solid;
+  }
+  
+  .drag-drop {
+	display: inline-block;
+	min-width: 40px;
+	padding: 2em 0.5em;
+  
+	color: #fff;
+	background-color: #29e;
+	border: solid 2px #fff;
+  
+	touch-action: none;
+	-webkit-transform: translate(0px, 0px);
+			transform: translate(0px, 0px);
+  
+	transition: background-color 0.3s;
+  }
+  
+  .drag-drop.can-drop {
+	color: #000;
+	background-color: #4e4;
+  }
+  .fechar
+  {
+	      margin-top: -21px;
+
+  }
+  .fechar-per{
+	margin-top: -21px;
+	position: fixed;
+    right: 6px
+  }
+
+  .waves-effect.waves-brown .waves-ripple {
+	/* The alpha value allows the text and background color
+	of the button to still show through. */
+	 background-color: #b3e5fc 
+   }
+
+   .Fazer-pergunta
+   {
+	display: initial;
+    position: absolute;
+    right: 10px;
+   }
+   .send-btn
+   {
+	display: inline;
+    position: relative;
+    left: 371px;
+	color: white;
+   }
+  .text-drop
+  {
+	font-size: 24px;
+    font-weight: bold;
+  }
+  #text-importante
+  {
+	position: relative;
+    top: 300px;
+  }
+  .area-user
+  {
+	  position: absolute;
+	  right: 70px;
+  }

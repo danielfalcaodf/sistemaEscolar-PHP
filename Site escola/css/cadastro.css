@@ -1,0 +1,198 @@
+body {
+
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background: #34495e;
+
+
+}
+
+.box {
+
+	width: 500px;
+
+    padding: 40px;
+    padding-top: 200px;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: #191919;
+	text-align: center;
+
+
+}
+
+.box h1{
+
+	color: white;
+	text-transform: uppercase;
+	font-weight: 500;
+
+
+
+}
+.box input[type = "text"],.box input[type = "email"],.box input[type= "password"]{
+
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #FFD700;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+
+
+
+}
+
+.box select
+{
+	border: 0;
+	background: transparent;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #FFD700;
+	padding: 14px 10px;
+	width: 200px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	height: 65px;
+
+}
+.select-selected {
+	background-color: DodgerBlue;
+  }
+  
+  /* Style the arrow inside the select element: */
+  .select-selected:after {
+	position: absolute;
+	content: "";
+	top: 14px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 6px solid transparent;
+	border-color: #fff transparent transparent transparent;
+  }
+  
+  /* Point the arrow upwards when the select box is open (active): */
+  .select-selected.select-arrow-active:after {
+	border-color: transparent transparent #fff transparent;
+	top: 7px;
+  }
+  
+
+.box input[type = "text"]:focus,.box input[type = "email"]:focus, .box input[type= "password"]:focus{
+
+	width: 280px;
+	border-color: #104E8B;
+
+
+}
+
+
+
+
+.box .btn{
+
+	border: 0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #104E8B;
+	padding: 0px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+
+
+
+
+
+
+
+}
+
+
+
+
+.box .btn:hover{
+
+
+	background: #104E8B;
+
+
+
+
+}
+.msg-errado
+{
+	color: rgb(255, 62, 62)
+}
+.msg-certo
+{
+	color: #32fd1f
+}
+
+.off
+{
+	display: none;
+}
+
+
+
+.box input:required{
+    background: transparent url(../imagens/redasterisk.png) no-repeat 98% center;
+    background-size: 9px;
+
+}
+
+.box input:required:valid {
+    background: transparent url(../imagens/check.png) no-repeat 98% center;
+    background-size: 20px;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.box input:focus:invalid  {
+    background: transparent url(../imagens/redasterisk.png) no-repeat 98% center;
+    background-size: 10px;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+.box select:required{
+    background: transparent url(../imagens/redasterisk.png) no-repeat 92% center;
+    background-size: 9px;
+
+}
+
+.box select:required:valid {
+    background: transparent url(../imagens/check.png) no-repeat 92% center;
+    background-size: 20px;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+}
+.box select:focus:invalid  {
+    background: transparent url(../imagens/redasterisk.png) no-repeat 92% center;
+    background-size: 10px;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535;
+}
+
+
+
