@@ -3,4 +3,4 @@
 *.scss linguist-vendored=false
 *.css linguist-vendored=true
 *.php linguist-detectable=true
-*.hack linguist-language=php
+*.html linguist-language=php
